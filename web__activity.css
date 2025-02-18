@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #4a5a63;
+    padding: 10px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a i {
+    font-size: 18px;
+}
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .icons a {
+    position: relative;
+    padding: 10px;
+}
+
+
+.navbar .icons .notification {
+    position: absolute;
+    top: 5px;  /* Moves badge slightly higher */
+    right: 5px;  /* Moves it closer to the edge */ 
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar .profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.navbar .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
