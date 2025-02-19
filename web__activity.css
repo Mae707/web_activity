@@ -39,7 +39,7 @@ body {
 }
 
 
-.navbar .icons .notification {
+.navbar .icons .Notification {
     position: absolute;
     top: 5px;  /* Moves badge slightly higher */
     right: 5px;  /* Moves it closer to the edge */ 
@@ -155,4 +155,24 @@ body {
     padding: 7px;
     border-radius: 7px;
     margin: 3px;
+}
+
+.notification{
+    background: #cfd8dc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
 }
