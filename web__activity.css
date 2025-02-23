@@ -167,8 +167,8 @@ body {
 .notification{
     background: #cfd8dc;
     padding: 10px;
-    border-radius: 5cm;
-    margin-top: 20px;
+    border-radius: 1cm;
+    margin-top: 5px;
     position: relative;
 }
 
@@ -234,6 +234,10 @@ body {
     color: #e48f62;
 }
 
+.thomas {
+    color: #e48f62;
+}
+
 .text {
     margin: 5px 0;
     font-size: 14px;
@@ -296,10 +300,36 @@ body {
     cursor: pointer;
 }
 
+.card.friend-request {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.friend-request h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.friend-avatar {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .friend-request .actions {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+.friend-request p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
 }
 
 .accept {
@@ -316,6 +346,33 @@ body {
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.card.ads{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card.ads h3{
+    margin:0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.ad-image{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card.ads p{
+    margin: 0;
+    font-size: 14px;
+    color: #777;
 }
 
 .bug-icon {
