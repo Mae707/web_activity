@@ -78,6 +78,53 @@ body {
     object-fit: cover;
 }
 
+.notification-icon {
+    position: relative;
+}
+
+.notifications {
+    display: none; /* Hide notifications by default */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 1000;
+}
+
+.notification-icon:hover .notifications {
+    display: block; /* Show notifications on hover */
+}
+
+.notifications h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notification-item i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #116A7B;
+}
+
+.notification-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
 .main-content{
     display: flex;
     flex: 1;
@@ -273,7 +320,7 @@ body {
 }
 
 .icon-button:hover {
-    background-color: #f6c9c9;
+    background-color: #6e6d6d;
 }
 
 .icon-button.heart .far.fa-heart {
