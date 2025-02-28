@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
     display: flex;
@@ -130,6 +131,7 @@ body {
     display: flex;
     flex: 1;
     margin-top: 60px;
+    flex-direction: row;
 }
 
 .left-sidebar {
@@ -234,12 +236,67 @@ body {
 
 .content {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Center content horizontally */
+    align-items: flex-start; /* Center content vertically */
     padding: 20px;
     background-color: #fff;
     margin: 0 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Status and Post Section */
+.status-post {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.status-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status span {
+    font-size: 16px;
+    color: #333;
+}
+
+.post-input textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post-button {
+    background-color: #116A7B;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    float: right;
+}
+
+.post-button:hover {
+    background-color: #0e5a6a;
+}
 .post-container {
     width: 100%;
     max-width: 600px;
@@ -251,7 +308,7 @@ body {
 
 .post {
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
