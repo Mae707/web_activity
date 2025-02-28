@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-
+/* Navbar*/
 .navbar {
     display: flex;
     align-items: center;
@@ -51,8 +51,8 @@ body {
 
 .navbar .icons .notification-badge{
     position: absolute;
-    top: 5px;  /* Moves badge slightly higher */
-    right: 5px;  /* Moves it closer to the edge */ 
+    top: 5px;  
+    right: 5px;  
     background-color: #7286D3;
     color: #FFEAD2;
     font-size: 12px;
@@ -127,6 +127,38 @@ body {
     color: #555;
 }
 
+/* Navbar Hover Effects */
+.navbar .icons a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    border-radius: 50%; /* Circular hover effect */
+}
+
+.navbar .profile:hover {
+    transform: scale(1.5); /* Slightly enlarge profile picture on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar .logo:hover {
+    transform: scale(1.2); /* Slightly enlarge profile picture on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    background-color: #6096B4;
+    border-radius: 5px; 
+}
+
+/* Notification Dropdown on Hover */
+.notification-icon:hover .notifications {
+    display: block; /* Show notifications on hover */
+}
+
+.notification-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px; 
+}
+
+.hamburger:hover .line {
+    background-color: #FFEAD2; 
+}
+
 .main-content{
     display: flex;
     flex: 1;
@@ -134,6 +166,7 @@ body {
     flex-direction: row;
 }
 
+/* Left Sidebar*/
 .left-sidebar {
     width: 250px;
     padding: 10px;
@@ -234,6 +267,7 @@ body {
     color: red;
 }
 
+/* Central Content */
 .content {
     flex-grow: 1;
     display: flex;
@@ -398,6 +432,7 @@ body {
     font-size: 14px;
 }
 
+/* Right Sidebar*/
 .right-sidebar {
     width: 300px;
     padding: 10px;
@@ -510,6 +545,62 @@ body {
     justify-content: center;
     font-size: 40px;
     cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #116A7B;
+    color: #FFEAD2;
+    padding: 20px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #FFEAD2;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section i {
+    margin-right: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #FFEAD2;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
 }
 
 /* Media Queries for Responsiveness */
