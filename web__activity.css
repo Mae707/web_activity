@@ -465,6 +465,11 @@ body {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: gray; 
+    padding: 8px 0;
+    border-radius: 5px; 
+}
 .card.friend-request {
     background-color: #fff;
     padding: 15px;
@@ -498,11 +503,17 @@ body {
 }
 
 .accept {
-    background-color: #8BC34A;
+    background-color: #65bd06;
     color: white;
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.actions .accept:hover {
+    background-color: green; 
+    padding: 5px 20px;
+    border-radius: 5px; 
 }
 
 .decline {
@@ -511,6 +522,12 @@ body {
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.actions .decline:hover {
+    background-color: darkred; 
+    padding: 5px 20px;
+    border-radius: 5px; 
 }
 
 .card.ads{
