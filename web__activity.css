@@ -272,11 +272,13 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column; /* Center content horizontally */
-    align-items: flex-start; /* Center content vertically */
+    align-items: center; /* Center content vertically */
     padding: 20px;
     background-color: #fff;
-    margin: 0 20px;
+    margin: 0 auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
 /* Status and Post Section */
@@ -665,6 +667,15 @@ body {
         width: 100%;
     }
 }
+
+@media (min-width: 1024px) {
+    .content {
+        align-items: center;
+        justify-content: flex-start; /* Prevents unnecessary vertical shifting */
+        margin: 0 auto;
+    }
+}
+
 
 /* Hamburger Menu Styles */
 .hamburger {
