@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="web__activity.css">
     </head>
     <body>
-        <div class="navbar">
+        <header class="navbar">
             <a href="#" class="logo">Linkon</a>
             <!-- para sa hamburger menu if mobile -->
-            <div class="hamburger" onclick="toggleMenu()"> <!-- need pa og script -->
+            <nav class="hamburger" onclick="toggleMenu()"> <!-- need pa og script -->
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-            </div>
+            </nav>
             <div class="icons">
                 <a href="#"><i class="fas fa-globe"></i></a>
                 <a href="#"><i class="fas fa-user"></i></a>
@@ -42,49 +42,49 @@
                     <img src="images/profile.jpg" alt="Profile">
                 </div>
             </div>
-        </div>
+        </header>
          
-        <div class= "main-content">
+        <main class= "main-content">
             <!-- Left Sidebar -->
-            <div class="left-sidebar">
+            <aside class="left-sidebar">
                     <!-- Profile Card -->
-                    <div class="profile-card">
+                    <section class="profile-card">
                         <img src="images/profile_picture.jpg" alt="Profile Picture" class="profile-pic">
                         <h2>Li Shēn</h2>
                         <p> <i class="fas fa-pencil-alt"></i> Cardiac Surgeon</p>
                         <p> <i class="fas fa-hospital"></i> Akso Hospital</p>
                         <p> <i class="fas fa-birthday-cake"></i> September 5, 1998</p>
-                    </div>
+                    </section>
 
                     <!-- Sidebar Menu -->
-                    <div class="sidebar-menu">
+                    <nav class="sidebar-menu">
                         <a href="#"><i class="fas fa-users"></i> My Groups</a>
                         <a href="#"><i class="fas fa-calendar-alt"></i> My Events</a>
                         <a href="#"><i class="fas fa-camera"></i> My Photos</a>
-                    </div>
+                    </nav>
 
                     <!-- Interests Section -->
-                    <div class="interests">
+                    <section class="interests">
                         <h3>Interests</h3>
                         <div class="tags">
                             <span>News</span> <span>Sports</span> <span>Medicine</span> <span>Games</span>
                             <span>Friends</span> <span>Desserts</span> <span>Books</span> <span>Food</span>
                             <span>Design</span> <span>Art</span> <span>Photos</span>
                         </div>
-                    </div>
+                    </section>
 
                     <!-- Notification Box -->
-                    <div class="notification">
+                    <section class="notification">
                         <span class="close-btn">&times;</span>
                         <h3>Hey!</h3>
                         <p>People are looking at your profile. Find out who.</p>
-                    </div>
-            </div>
+                    </section>
+                </aside>
 
             <!-- central content -->
-            <div class="content">
+            <section class="content">
                  <!-- Status and Post Section -->
-                <div class="status-post">
+                <article class="status-post">
                     <div class="status">
                         <img src="images/profile_picture.jpg" alt="Profile Picture" class="status-profile-pic">
                         <span>What's on your mind, Li Shēn?</span>
@@ -93,10 +93,11 @@
                         <textarea placeholder="What's on your mind?"></textarea>
                         <button class="post-button">Post</button>
                     </div>
-                </div>
+                </article>
+
                 <div class="post-container">
                     <!-- Post 1 -->
-                    <div class="post">
+                    <article class="post">
                         <div class="user-info">
                             <img src="images/watermelon_profile.jpg" alt="Watermelon Profile">
                             <span class="username watermelon">Watermelon</span>
@@ -117,10 +118,10 @@
                             <p><strong>4i 707:</strong> Only when I'm with you can I truly feel carefree. Even if it's just for a moment. 🌞</p>
                             <p><strong class="watermelon">Watermelon</strong> replied to <strong>4i 707</strong>: guess I'll have to stick around longer from now on. 🌞🌞🌞</p>
                         </div>
-                    </div>
+                    </article>
             
                     <!-- Post 2 -->
-                    <div class="post">
+                    <article class="post">
                         <div class="user-info">
                             <img src="images/birb_profile.jpg" alt="Birb Profile">
                             <span class="username birb">Birb</span>
@@ -141,10 +142,10 @@
                             <p><strong>4i 707:</strong> Look, a walking storage rack! I should take a pic before it moves.</p>
                             <p><strong class="birb">Birb</strong> replied to <strong>4i 707</strong>: ofc, why should i be the only victim here.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Post 3 -->
-                    <div class="post">
+                    <article class="post">
                         <div class="user-info">
                             <img src="images/thomas_profile.jpg" alt="Thomas Profile">
                             <span class="username thomas">Thomas</span>
@@ -164,12 +165,12 @@
                             <p><strong>4i 707:</strong> Why stop at tenfold? It should should be at least a thousand times more than that.</p>
                             <p><strong class="thomas">Thomas</strong> replied to <strong>4i 707</strong>: You're more ambitious than me.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
 
             <!-- Right sidebar -->
-            <div class="right-sidebar">
+            <aside class="right-sidebar">
                 <div class="card event">
                     <h3>Upcoming Events:</h3>
                     <img src="images/event_image.jpg" alt="Event Image">
@@ -202,8 +203,8 @@
                     <p>Check out our latest offers!</p>
                 </div>
                 <div class="card bug-icon">🐞</div>
-            </div>
-        </div>
+            </aside>
+        </main>
 
         <!-- Footer -->
     <footer class="footer">
