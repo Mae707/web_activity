@@ -12,19 +12,20 @@ body {
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #116A7B;
-    padding: 10px;
+    padding: 10px 10px;
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 1000;
 }
 .navbar .logo {
     color: #FFEAD2;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     padding: 10px;
+    margin-left: 10px;
 }
 
 .navbar a {
@@ -682,7 +683,7 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto;
+    margin-right: 10px;
     padding: 10px;
 }
 
