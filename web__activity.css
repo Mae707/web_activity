@@ -433,6 +433,9 @@ body {
     color: red; /* Fill heart red on hover */
 }
 
+.icon-button.heart:active .far.fa-heart {
+    color: rgb(119, 0, 255); /* Fill heart red on hover */
+}
 .comments {
     background-color: #f8f8f8;
     padding: 10px;
@@ -527,6 +530,10 @@ body {
     padding: 5px 20px;
     border-radius: 5px; 
 }
+.actions .accept:active{
+    background-color: #103f00;
+    opacity: 0.8;
+}
 
 .decline {
     background-color: #F44336;
@@ -541,7 +548,10 @@ body {
     padding: 5px 20px;
     border-radius: 5px; 
 }
-
+.actions .decline:active{
+    background-color: #b54c3a;
+    opacity: 0.8;
+}
 .card.ads{
     background-color: #fff;
     padding: 15px;
