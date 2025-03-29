@@ -232,5 +232,20 @@
             <p>&copy; 2025 Linkon. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+        const icons = document.querySelector('.icons');
+        icons.classList.toggle('active');
+        }
+
+        window.addEventListener('click', function(event) {
+        const icons = document.querySelector('.icons');
+        const hamburger = document.querySelector('.hamburger');
+
+        if (!hamburger.contains(event.target) && !icons.contains(event.target)) {
+            icons.classList.remove('active');
+        }
+        });
+        </script>
     </body>
 </html>

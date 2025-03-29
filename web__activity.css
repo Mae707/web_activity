@@ -727,9 +727,11 @@ body {
         top: 60px;
         right: 0;
         background-color: #116A7B;
-        width: 100%;
+        width: 250px;
+        height: auto;
         padding: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 0 0 10px;
     }
 
     .icons.active {
